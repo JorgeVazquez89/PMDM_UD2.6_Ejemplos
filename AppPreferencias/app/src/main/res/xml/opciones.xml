@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="CATEGORÍA 1">
+    <!-- Preferencias definidas en esta categoría-->
+        <CheckBoxPreference
+            android:key="clave1"
+            android:title="PREFERENCIA 1"
+            android:summary="Descripción de la preferencia 1" />
+        <EditTextPreference
+            android:key="clave2"
+            android:title="PREFERENCIA 2"
+            android:summary="Descripción de la preferencia 2"
+            android:dialogTitle="INTRODUCE VALOR"
+            android:hint="Introduce un texto"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="CATEGORÍA 2">
+    <!-- Preferencias definidas en esta categoría -->
+        <ListPreference
+            android:key="clave3"
+            android:title="PREFERENCIA 3"
+            android:summary="Descripción de la preferencia 3"
+            android:dialogTitle="SITEMAS OPERATIVOS"
+            android:entries="@array/lista"
+            android:entryValues="@array/clavelista" />
+        <MultiSelectListPreference
+            android:key="clave4"
+            android:title="PREFERENCIA 4"
+            android:summary="Descripción de la preferencia 4"
+            android:dialogTitle="DIA PREFERENCIA"
+            android:entries="@array/multilista"
+            android:entryValues="@array/clavemultilista"/>
+    </PreferenceCategory>
+</PreferenceScreen>
+
